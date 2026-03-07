@@ -193,36 +193,96 @@ main {
     KONTAKT
  ================================*/
 
-.kontakt {
-    margin-top:50px;
+.kontakt-sekce {
+    padding: 60px 0;
+    background-color: #f9f9f9; 
+    margin-top: 40px;
 }
 
-.kontakt li {
-    list-style-type: none;
+.kontakt-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.nadpis-kontakt h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nadpis-kontakt i {
+    color: #f1c40f;
+    margin-right: 10px;
+}
+
+/* ================================
+    OTEVIRACI DOBA
+ ================================*/
+ 
+.provozni-doba {
+    list-style: none;
+    padding: 0;
+}
+
+.provozni-doba li {
+    display: flex;
+    justify-content: space-between; 
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.provozni-doba li:last-child {
+    border-bottom: none;
+}
+
+.provozni-doba li.zavreno {
+    color: #e74c3c; 
+    font-weight: bold;
+}
+
+/* ================================
+    KONTAKTNI-UDAJE
+ ================================*/
+
+.kontaktni-udaje-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kontakt-polozka {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.kontakt-polozka i {
+    font-size: 1.5rem;
+    color: #f1c40f;
+    width: 30px;
     text-align: center;
 }
 
-.kontakt ul {
-    padding:0;
-    margin:0;
+.kontakt-polozka strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
 }
 
-.knadpis {
-    font-size:20px;
-    margin: 25px 0;
-}
-
-.knadpis:after {
-    content: "";
-    display:block;
-    width:100px;
-    border-bottom:2px dashed black;
-    margin:10px auto;
-}
-
-.kontaktni-udaje ul li a {
+.kontakt-polozka a, .kontakt-polozka p {
     text-decoration: none;
-    color:black;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+.kontakt-polozka a:hover {
+    color: #f1c40f;
 }
 
 /* ================================
@@ -234,7 +294,7 @@ footer {
     clear: both;
     background: #0C0704;
     padding: 40px 0;
-    color: white;
+    color:#888;
     text-align: center;
 }
 
@@ -243,9 +303,6 @@ footer {
  ================================*/
 
 @media only screen and (max-width:1100px) {
-    main {
-        margin-top:15%;
-    }
 
     .container {
         max-width: 100%;
@@ -262,7 +319,18 @@ footer {
     }
 }
 
+@media only screen and (max-width:900px) {
+    main {
+        margin-top:5%;
+    }
+}
+
 @media only screen and (max-width:480px) {
+
+    main {
+        margin-top:15%;
+    }
+
     .sluzby {
         margin-top:10%;
     }
