@@ -46,7 +46,8 @@ body {
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    transition: 0.3s;
+    color:#f1c40f;
 }
 
 .nav img {
@@ -196,12 +197,10 @@ main {
 
 .kontakt-sekce {
     padding: 60px 0;
-    background-color: #f9f9f9; 
     margin-top: 40px;
 }
 
 .kontakt-box {
-    background: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -297,6 +296,15 @@ footer {
     padding: 40px 0;
     color:#888;
     text-align: center;
+}
+
+footer .autor a {
+    text-decoration: none;
+    color:#ababab;
+}
+
+footer .autor a:hover{
+    text-shadow:0 2px 5px #888;
 }
 
 /* ================================

@@ -7,6 +7,7 @@ body {
 .container {
     max-width: 1020px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* ----- NAVIGACE ----- */
@@ -21,7 +22,7 @@ body {
         align-items: center;
         justify-content: space-between; 
         background-color: #0C0704;
-        padding: 10px 20px;
+        padding: 10px 50px;
         color: white;
         z-index:50;
         border-bottom:1px solid white;
@@ -32,18 +33,19 @@ body {
     }
 
 .nav a {
-        text-decoration: none;
-        color:white;
-        font-weight: bold;
-        font-family: sans-serif,Arial, Helvetica, sans-serif;
-        border-left:2px solid white;
-        padding-left:10px;
-        padding-right:5px;
-    }
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    border-left:2px solid white;
+    padding-left:10px;
+    padding-right:5px;
+}
 
 .nav a:hover {
-        text-decoration: underline;
-    }
+    transition: 0.3s;
+    color:#f1c40f;
+}
 
 .nav img {
     width: 50px;
@@ -52,7 +54,6 @@ body {
 /* ----- NADPIS----- */
 
 .nadpis h1 {
-    text-align: center;
     margin-top:20px;
     font-size:30px;
 }
