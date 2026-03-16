@@ -1,183 +1,396 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pneuservis Prosetice | Petr Uličný</title>
+    <title>Petr Uličný | Tvorba webů na míru a doučování ZŠ/SŠ</title>
+    <link rel="icon" type="image/x-icon" href="/img/ja_logo_3.png">
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/grid.css">
-    <link rel="icon" type="image/png" href="/img/logo.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/script.js" defer></script>
 
-    <meta name="description" content="Hledáte rychlý pneuservis v Proseticích? Nabízíme přezutí pneu, vyvážení kol, opravy defektů a uskladnění pneumatik. U nás na přezutí nečekáte, zavolejte nám ještě dnes!">
-    <meta name="keywords" content="Petr Uličný, Pneuservis Prosetice, Pneuservis Teplice, Pneuservis, Prosetice, Přezutí, Zimní pneumatiky, Zimní pneu, Letní pneumatiky, Letní pneu, Pneu, Celoroční pneumatiky, Uskladnění pneumatik, Pneumatiky, Výměna pneumatik, Oprava defektu, Vyvážení kol, Vyvažování kol, Prodej pneumatik, Pneuservis Ceník">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Ahoj, jsem Petr Uličný. Tvořím rychlé a moderní weby, které vám pomohou růst. Podívejte se na mé portfolio a začněme spolupracovat!">
+    <meta name="keywords" content="Petr Uličný, webdesign, tvorba webu, programátor, portfolio, UI/UX design, doučování, matematika, matika, informatika, pomoc s projekty, tvorba projektů, přijímací zkoušky, příprava na přijímací zkoušky, příprava">
     <meta name="author" content="Petr Uličný">
 
-    <meta property="og:title" content="Pneuservis Prosetice | Petr Uličný">
-    <meta property="og:description" content="Rychlé přezutí a servis pneumatik v Proseticích. Máme otevřeno i v sobotu!">
-    <meta property="og:image" content="https:/pneuservis-prosetice.cz/logo.png">
+    <meta property="og:title" content="Petr Uličný | Moderní webdesign a doučování">
+    <meta property="og:description" content="Tvořím weby, které mají styl a výsledky. Mrkněte na mou práci. Zároveň doučuju žáky základních a středních škol.">
+    <meta property="og:image" content="https://ulicnypetr.cz/img/ja_logo_pozadi.png"> <meta property="og:url" content="https://ulicnypetr.cz">
     <meta property="og:type" content="website">
 </head>
 <body>
 
-    <div class="nav">
-        <div id="logo">
-            <img src="/img/logo.png" alt="">        
-        </div>
-        
-        <div class="nav-links">
-            <!-- <a href="https://pneuservis-teplice.reservio.com" target="_blank">Rezervace</a> -->
-            <a href="/cenik.html">Ceník</a>
-            <a href="/index.html">Hlavní stránka</a>
-        </div>
-    </div>
+    <!-- === NAVIGACE === -->
 
-    <header>
+    <nav>
+        <div class="nav_img">
+            <a href="#" class="jq-scroll-top"><img src="/img/ja_logo_3.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="jq-scroll-web">Webové stránky</a>
+            <a href="#" class="jq-scroll-doucovani">Doučování a vytvoření projektů</a>
+            <a href="#" class="jq-scroll-recenze">Recenze</a>
+            <a href="/portfolio.html">Portfolio</a>
+        </div>
+
+        <div class="mobile-nav-icon">
+            <img src="/img/menu.png" alt="Menu">
+        </div>
+    </nav>
+
+<!-- === HEADER === -->
+
+    <header class="jq-top">
+
+        <div class="uvod">
+            <h1>Petr Uličný</h1>
+            <h3>osobní web</h3>
+            <br>
+            <p>Podporuji vaše digitální i&nbsp;vzdělávací&nbsp;cíle <br>
+                Od profesionálních webových&nbsp;stránek až po školní&nbsp;projekty</p>  
+        </div>
+
+        <div class="arrow-down">
+            <a class="jq-scroll-web"><img src="/img/arrow_down_white.png" alt=""></a>
+        </div>
 
     </header>
 
-    <main>
+<!-- === KONEC HEADER === -->   
 
-        <div class="container">
+    <!-- === CONTAINER === -->
+    <div class="container jq-web">
 
-        <div class="sluzby">
-            <div class="nadpis">
-                <h1>Naše služby</h1>
-            </div>
+<!-- === MAIN === -->   
+        <main>
 
-                <div class="row">
-                    <div class="col span-1-of-2">
-                        <div class="sluzba-item">
-                            <i class="fa-solid fa-car-side sluzba-ikona"></i>
-                            <div class="sluzba-text">
-                                <h3 class="sluzba-nadpis">Přezutí</h3>
-                                <p class="sluzba-popis">Kompletní přezutí letních a zimních pneumatik rychle a spolehlivě.</p>
-                            </div>
-                        </div>
+        <!-- === SEKCE WEB === -->    
+            <section class="web">
+
+                <div class="col span-2-of-3">
+                    <div class="heading-main">
+                        <h2>Tvorba webových stránek</h2>
                     </div>
 
-                    <div class="col span-1-of-2">
-                        <div class="sluzba-item">
-                            <i class="fa-solid fa-wrench sluzba-ikona"></i>
-                            <div class="sluzba-text">
-                                <h3 class="sluzba-nadpis">Oprava defektů</h3>
-                                <p class="sluzba-popis">Provádíme rychlou a kvalitní opravu defektů, abyste mohli hned vyrazit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col span-1-of-2">
-                        <div class="sluzba-item">
-                            <i class="fa-solid fa-gauge-high sluzba-ikona"></i>
-                            <div class="sluzba-text">
-                                <h3 class="sluzba-nadpis">Vyvážení</h3>
-                                <p class="sluzba-popis">Precizní vyvážení kol pro klidnou a bezpečnou jízdu bez vibrací.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col span-1-of-2">
-                        <div class="sluzba-item">
-                            <i class="fa-solid fa-warehouse sluzba-ikona"></i>
-                            <div class="sluzba-text">
-                                <h3 class="sluzba-nadpis">Uskladnění</h3>
-                                <p class="sluzba-popis">Bezpečné uskladnění vašich pneumatik v suchém a čistém prostředí.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about">
-
-                <div class="row">
-                    <div class="col span-1-of-2 about-text">
-                        <div class="nadpis">
-                            <h1>Pneuservis Prosetice</h1>
-                        </div>
-
-                        <p>    
-                            Jsme profesionální pneuservis v Teplicích s dlouholetou tradicí. Nabízíme kompletní služby pro vaše auto, od výměny pneumatik a vyvažování kol až po odbornou opravu defektu. U nás pořídíte letní, zimní i celoroční pneumatiky za skvělé ceny. Pro vaše pohodlí zajišťujeme také uskladnění pneumatik mimo sezónu. Podívejte se na náš ceník a objednejte se na přezutí ještě dnes!“
-                        </p>
-                        <br>
-                        <p class="odsazeni-dole">
-                            Nenechávejte přezutí na poslední chvíli. Ozvěte se nám a domluvíme vám termín bez zbytečného čekání.
-                        </p>
+                    <div class="web-text">
                         
-                        <a href="tel:+420602243608" class="btn-hlavni">
-                            <i class="fa-solid fa-phone btn-ikona"></i> Zavolat a domluvit termín
-                        </a>
-                    </div>
-
-                        <div class="col span-1-of-2 img-wrapper">
-                            <img src="/img/prostor.png" alt="Prostory pneuservisu">
+                        <div class="popis">
+                            <p>Vytvářím moderní weby, které nejsou jen digitální vizitkou, ale skutečným nástrojem pro váš růst</p>
                         </div>
-                </div>
-            </div>
 
-    <div class="kontakt-sekce">
-        <div class="row">
-            <div class="col span-1-of-2">
-                <div class="kontakt-box">
-                    <div class="nadpis-kontakt">
-                        <h2><i class="fa-regular fa-clock"></i> Otevírací doba</h2>
-                    </div>
-                    <ul class="provozni-doba">
-                        <li><span>Pondělí</span> <span>8:00 - 17:00</span></li>
-                        <li><span>Úterý</span> <span>8:00 - 17:00</span></li>
-                        <li><span>Středa</span> <span>8:00 - 17:00</span></li>
-                        <li><span>Čtvrtek</span> <span>8:00 - 17:00</span></li>
-                        <li><span>Pátek</span> <span>8:00 - 17:00</span></li>
-                        <li><span>Sobota</span> <span>8:00 - 12:00</span></li>
-                        <li class="zavreno"><span>Neděle</span> <span>Zavřeno</span></li>
-                    </ul>
-                </div>
-            </div>
+                        <br><br>
 
-            <div class="col span-1-of-2">
-                <div class="kontakt-box">
-                    <div class="nadpis-kontakt">
-                        <h2><i class="fa-solid fa-address-book"></i> Kontakt</h2>
-                    </div>
-                    <div class="kontaktni-udaje-list">
-                        <div class="kontakt-polozka">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <strong>Telefon</strong>
-                                <a href="tel:+420602243608">+420 602 243 608</a>
-                            </div>
+                        <!-- === MOŽNOSTI NABÍDKY -->
+                        
+                        <div class="nabidka">
+
+                            <h2>
+                                Co nabízím?
+                            </h2>
+
+                        <hr>    
+                        <br>
+
+                            <ul>
+                                <li>
+                                <strong>Weby na míru</strong>
+                                <p>Vytvořím Vám web přesně podle vašich představ</p>
+                                </li>
+                                <li>
+                                    <strong>Responzivita</strong>
+                                    <p>Váš web se dokonale přizpůsobí každé obrazovce</p>
+                                </li>
+                                <li>
+                                    <strong>Moderní design</strong>
+                                    <p>Zajistím, aby Váš web byl pro zákazníky zážitkem</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="kontakt-polozka">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <strong>E-mail</strong>
-                                <a href="mailto:pneu.prosetice@gmail.com">pneu.prosetice@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="kontakt-polozka">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Adresa</strong>
-                                <a href="https://maps.app.goo.gl/oGdAtKuGYdSyWzJv5" target="_blank"><p>Okrajová 92, Teplice 415&nbsp;01</p></a>
-                            </div>
+
+                        <br>
+
+                        <!-- === ZÁJMOVÉ TLAČÍTKO === -->
+
+                        <div class="zajem jq-scroll-kontakt">
+                            <a href="#">Mám zájem o web</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-        
-    </main>
 
+                <div class="col span-1-of-3">
+                    <div class="image">
+                        <img src="/img/ja_komp_mensi.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- === SEKCE SPOLULPRÁCE === -->
+
+            <div class="spoluprace web">
+                <div class="row">
+
+                    <div class="col span-1-of-2">
+
+                        <div class="filler-image">
+                            <img src="/img/laptop.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="col span-1-of-2">
+                        <h2>
+                            Jak vypadá společná spolupráce?
+                        </h2>
+                        <hr>
+                        <br>
+
+                        <!-- === VÝPIS MOŽNÉ SPOLUPRÁCE === -->
+
+                        <ul class="spoluprace-list">
+                            <li>
+                                <div class="text-box">
+                                    <strong>Úvodní konzultace</strong>
+                                    <p>Probereme si Vaše cíle a co od webu&nbsp;očekáváte</p>
+                                </div>
+                                <img src="/img/chat-icon.png" alt="" class="web-icon">
+                                </li>
+                                <li>
+                                    <div class="text-box">
+                                        <strong>Návrh a struktura</strong>
+                                        <p>Ukážu Vám předběžné návrhy a doladíme detaily</p>
+                                    </div>
+                                    <img src="/img/list-icon.png" alt="" class="web-icon">
+                                </li>
+                                <li>
+                                    <div class="text-box">
+                                        <strong>Vývoj a realizace</strong>
+                                        <p>Pustím se do tvorby a budu Vás průběžně informovat&nbsp;o&nbsp;postupu</p>
+                                    </div>
+                                    <img src="/img/code-icon.png" alt="" class="web-icon">
+                                </li>
+                                <li>
+                                    <div class="text-box">
+                                        <strong>Testování a spuštění</strong>
+                                        <p>Všechno otestujeme, vyladíme&nbsp;a&nbsp;vypustíme web&nbsp;do&nbsp;světa</p>
+                                    </div>
+                                    <img src="/img/pc-icon.png" alt="" class="web-icon">
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SEKCE DOUČOVÁNÍ === -->
+
+            <section class="doucovani jq-doucovani">
+
+                <div class="heading-main">
+                    <h2>Doučování a mentoring</h2>
+                </div>
+
+                <div class="popis">
+                    <p>Předávám své zkušenosti dál <br> Pomůžu vám pochopit problematiku učiva tak, abyste u testů i projektů získali potřebnou jistotu</p>
+                    </div>
+
+                <!-- === MOŽNOSTI DOUČOVÁNÍ === -->
+
+                <div class="doucovani-vyber">
+
+                    <div class="row">
+
+                        <div class="col span-1-of-3">
+                            <div class="doucovani-box">
+                                <div class="second-main">
+                                    <h2>Matematika</h2>
+                                </div>
+
+                                <br>
+
+                                <div class="doucovani-text">
+                                    <h3>Co nabízím?</h3>
+                                    <ul>
+                                        <li>Individuální přístup</li>
+                                        <li>Příprava na přijímací zkoušky na střední školy</li>
+                                        <li>Doučování látky základních a středních škol</li>
+                                        <li>Srozumitelné vysvětlení bez zbytečného stresu</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="doucovani-icon">
+                                    <img src="/img/math-icon-shadow.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col span-1-of-3">
+                            <div class="doucovani-box">
+                                <div class="second-main">
+                                    <h2>Informatika</h2>
+                                </div>
+
+                                <br>
+
+                                <div class="doucovani-text">
+                                    <h3>S čím Vám mohu pomoci?</h3>
+                                    <ul>
+                                        <li>Práce s MS office 365</li>
+                                        <li>Základy jazyka c++, c# nebo python</li>
+                                        <li>Vytvoření jednoduchých stránek</li>
+                                        <li>Práce s databázovým jazykem mysql</li>
+                                    </ul>
+                                </div>
+
+                                <div class="doucovani-icon">
+                                    <img src="/img/pc-icon.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col span-1-of-3">
+                            <div class="doucovani-box">
+                                <div class="second-main">
+                                    <h2>Vytvoření projektu</h2>
+                                </div>
+
+                                <br>
+                                
+                                <div class="doucovani-text">
+                                    <h3>Nevíte si rady?</h3>
+
+                                    <ul>
+                                        <li>Powerpoint prezentace</li>
+                                        <li>Programátorské projekty</li>
+                                        <li>Přetvoření výpisků</li>
+                                        <li>A vše ostatní</li>
+                                    </ul>
+                                </div>
+
+                                <div class="doucovani-icon">
+                                    <img src="/img/rocket-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- === ZÁJMOVÉ TLAČÍTKO === -->
+
+                    <div class="zajem jq-scroll-kontakt">
+                            <a href="#">Kontaktujte mě</a>
+                        </div>
+
+                </div>
+
+            </section>
+
+            <!-- === SEKCE RECENZE === -->
+
+            <section class="recenze jq-recenze">
+                <div class="heading-main">
+                    <h2>Recenze od spokojených klientů</h2>
+                </div>
+
+                <div class="recenze-klienti">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <div class="recenze-profil">
+                                <img src="img/anonymous_pic_m.jpg" alt="">
+                                <h2>Anonym</h2>
+                            </div>
+
+                            <div class="recenze-text">
+                                <p>Petra jsem oslovil kvůli přípravě na přijímačky a nemohl jsem si vybrat lépe. Má pevné nervy a i když to se mnou neměl lehké, tak mi vždy vše vysvětlil v klidu. Určitě doporučuji </p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col span-1-of-3">
+                            <div class="recenze-profil">
+                                <img src="img/anonymous_pic_m.jpg" alt="">
+                                <h2>Šimon</h2>
+                            </div>
+
+                            <div class="recenze-text">
+                                <p>Vybral jsem si Petra, protože je mladý, vtipný a rozumí, co od něho chci znát. Je prostě cool. Používá suprovou tabuli, takže se s ním můžu učit kdekoliv, nepotřebuji ani papir ani propisku. Vysvětlí to srozumitelně a chápu, co ode mě chce. Perfektní přístup</p>
+                            </div>
+                        </div>
+
+                        <div class="col span-1-of-3">
+                            <div class="recenze-profil">
+                                <img src="img/anonymous_pic_f.jpg" alt="">
+                                <h2>Monika</h2>
+                            </div>
+
+                            <div class="recenze-text">
+                                <p>Na doporučení jsme oslovili Petra k doučování matematiky. Syn je z něho nadšený. Je trpělivý, spolehlivý a snaží se odpovědet a vysvětlit jakoukoliv otázku. Doučování je moderní, kreativní, důsledné a přispůsobivé směrem k dítěti. Hodnocení 10/10 :-)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+<!-- === KONEC MAIN === -->           
+
+<!-- === FOOTER === -->   
     <footer>
-        <p>&copy; 2026 Pneuservis Uličný Prosetice</p>
 
-        <p class="autor">
-            Web made by <a href="https://ulicnypetr.cz" target="_blank">Petr Uličný - ulicnypetr.cz</a>
-        </p>
+        <!-- === SEKCE KONTAKT === -->
+        <section class="kontakt"> 
+
+            <div class="row">
+
+                <div class="col span-1-of-2">
+                        <div class="kontakt-image">
+                            <img src="/img/já_bryle_2_mensi.jpg" alt="">
+                        </div>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <div class="kontakt-udaje jq-kontakt">
+                        <div class="kontakt-main">
+                        <h2>
+                            Kontaktní údaje
+                        </h2>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <strong>Jméno:</strong>
+                            <p>Petr Uličný</p> 
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong>
+                            <p id="email">ulicnybusiness@gmail.com</p>
+                        </li>
+                        <li>
+                            <strong>Telefonní číslo:</strong><br>
+                            <p><a href="sms:+420728253849">+420 728 253 849</a></p>
+                        </li>
+                        <li>
+                            <strong>Sociální sítě:</strong>
+                            <p><a href="https://www.instagram.com/ulicnypetr.cz/" target="_blank"><img src="/img/Instagram_logo.png" alt=""></a> <a href="https://www.facebook.com/ulicnypetr.cz/" target="_blank"><img src="/img/Facebook_logo.png" alt=""></a></p>
+                            <p></p>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <div class="license">
+            <p>© 2026 Petr Uličný | <a href="https://www.freepik.com" target="_blank" rel="nofollow">Image&nbsp;by&nbsp;Freepik</a></p>
+        </div>
     </footer>
+
+    </div>  
 </body>
 </html>
